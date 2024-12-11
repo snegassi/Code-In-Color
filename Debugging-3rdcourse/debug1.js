@@ -48,8 +48,8 @@ write a block of code that prints to console whether a number is even or odd.
  print “Login failed”.
   */
 
-// let username=sam
-// let passwordss=zxcv
+// let username="sam"
+// let passwordss="zxcv"
 
 // if (username && passwordss){
 //     console.log("Login successful.")
@@ -69,14 +69,14 @@ Calculate and display the final ticket price based on these rules
  */
 
 
-let ticketPrice=20
-let age=3
-let membershipCard=false
+// let ticketPrice=20
+// let age=3
+// let membershipCard=false
 
-if ((age<=18)||(age>=65)){
-    console.log ("You get $5 dollar discount,so you'r change is ", ticketPrice-15)
-}else if(membershipCard){
-    console.log ("You get $5 dollar + $3 dollar= $7dollar discount,so you'r change is ", ticketPrice-13)
-}else{
-    console.log ("You pay the full prise $20 dollars,so you'r change is ", ticketPrice-20 )
-}
+// if ((age<=18)||(age>=65)){
+//     console.log ("You get $5 dollar discount,so you'r change is ", ticketPrice-15)
+// }else if(membershipCard){
+//     console.log ("You get $5 dollar + $3 dollar= $7dollar discount,so you'r change is ", ticketPrice-13)
+// }else{
+//     console.log ("You pay the full prise $20 dollars,so you'r change is ", ticketPrice-20 )
+// }
