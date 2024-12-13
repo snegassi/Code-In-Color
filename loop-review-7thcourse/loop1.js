@@ -25,13 +25,13 @@
 // 1) Scenario: Print all multiples of 3 between 1 and 30
 // Hint: you can use (i%3 == 0) to check if a number is divisible by 3
 
-for(let i=1;i<=30;i++){
-     if(i%3==0){
+// for(let i=1;i<=30;i++){
+//      if(i%3==0){
       
-       //console.log(`${i} is odd`)      // this works back tick helps with printing variables and strings together making it efficent unlike the next line
-       console.log([i] + " is odd")     // this works
-     }  
-}
+//        //console.log(`${i} is odd`)      // this works back tick helps with printing variables and strings together making it efficent unlike the next line
+//        console.log([i] + " is odd")     // this works
+//      }  
+// }
 
 
 // 2) Scenario: Write a program to calculate and display to console the sum of the first n natural 
@@ -60,12 +60,15 @@ for(let i=1;i<=30;i++){
 // Example Input: n = 4
 // Example Output: 24 (4 * 3 * 2 * 1)
 
-// let n =4
+const n =5  // const instead of let
+let factorial=1
 
-// for(let i=n; i>0;i--){
-//   //n!
-//   factorial=n * (n - 1) * (n - 2) * (n-3)*1
+for(let i=n; i>0;i--){
+  //n!
+  //factorial= n * (n - 1) * (n - 2) * (n-3)
+    factorial=factorial*i
+}
+ console.log(factorial)
 
-//   console.log(factorial)
-// }
+// this is an answer for the question 4 from the pictures
 
