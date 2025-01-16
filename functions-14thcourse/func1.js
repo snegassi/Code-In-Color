@@ -73,3 +73,7 @@ function rockPapersScissor(player1,player2){
 //    }
 // }
 //  console.log(rockPapersScissor("bed","rock"))
+
+
+// let x ="hey bye"
+// console.log(x.indexOf("y", 3))
