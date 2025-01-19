@@ -25,9 +25,6 @@
 
 
 
-
-
-
 // Logical OR
 // "If it is a weekend or a public holiday, display 'Closed'."
 
@@ -246,3 +243,14 @@
 // }else if (temp>=25){
 //     console.log("Wear light clothing")
 // }
+
+
+
+//////////////////////////////////////////////////////////////////////
+let age= 5;
+let canVote;
+if (age >= 20){
+  console.log(canVote= "yes")
+}else{
+    console.log(canVote="No")
+}

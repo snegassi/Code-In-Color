@@ -21,10 +21,34 @@
 
 /**Adding Numbers from 1 to 3 */
 
-let sum=0
-for(i=0;i<=3;i++){
-    sum+=i
+// let sum=0
+// for(i=0;i<=3;i++){
+//     sum+=i
     
-    console.log(i=i+1)
-}   
-      //console.log(sum) // why is consol.log on the out side 
+//     console.log(i=i+1)
+// }   
+      //console.log(sum) // why is consol.log on the out side
+/////////////////////////////////////////////////////////////////////////////////////
+
+for (let i = 0; i <= 5; i++) {
+   
+    console.log(`iteration ${i}`)
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////
+
+// generate a pattern of 8 rows of stars
+
+
+let row = "";
+for (let i = 1;i <= 8;i++) {
+
+    // row = row + "*", so we don't see the i but as the  i is runing in the loop the star pattern is created
+     row += "*"; 
+
+     console.log(row)
+    
+}
+
+
