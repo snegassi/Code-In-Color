@@ -6,6 +6,8 @@
 
 // loop through numbers 1 to 7, categorize weekdays and weekends
 
+
+
 for (let i = 1; i <= 8; i++) {
   if (i <= 5) {
     switch (i) {
@@ -33,3 +35,6 @@ for (let i = 1; i <= 8; i++) {
     :console.log("The number exceeds day 7 ")
   }
 }
+
+
+// done, but if the day was an input we could declare itas, let x= then the 8 at the top in the condition would have been n so, x=n.
