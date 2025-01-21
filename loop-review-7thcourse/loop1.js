@@ -60,15 +60,26 @@
 // Example Input: n = 4
 // Example Output: 24 (4 * 3 * 2 * 1)
 
-const n =5  // const instead of let
-let factorial=1
+// const n =5  // const instead of let
+// let factorial=1
 
-for(let i=n; i>0;i--){
-  //n!
-  //factorial= n * (n - 1) * (n - 2) * (n-3)
-    factorial=factorial*i
-}
- console.log(factorial)
+// for(let i=n; i>0;i--){
+//   //n!
+//   //factorial= n * (n - 1) * (n - 2) * (n-3)
+//     factorial=factorial*i
+// }
+//  console.log(factorial)
 
 // this is an answer for the question 4 from the pictures
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// let s= "apple"
+// console.log(s.length)
+// for (let i = 0;i <= s.length;i++) {
+//   console.log(`iterate ${i}`)
+  
+//  }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

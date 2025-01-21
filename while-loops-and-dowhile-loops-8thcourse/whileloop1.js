@@ -34,17 +34,17 @@ Use while loop
  * But in here this line answers like the question requested using both 
 "Use while loop" and "User prompt-sync" :
 
- N.B., promtpt goes to the user and tells him what to do,
+ N.B., prompt goes to the user and tells him what to do,
  so instead of using let input=5, which is considered as "Direct"; we use "prompt one" below,
  */
 
- const prompt= require(`prompt-sync`)(); // require = importing into this prompt
+ const prompt= require(`prompt-sync`)(); // require = importing the "prompt-sync module" into this prompt
  let input = prompt("Enter a number greater than 10:");
 
-while(input<=10){
-    // input=prompt("Invalid input. Please enter a number greater than 10:")
-    input = prompt(" Invalid input.Please,Enter a number greater than 10:");
-   
-}
+ // here the condition it should have been (input >=10), but we are using the < which makes it opposit. In coding it's advised to start with the "false/wrong"
+//  especially with while loop as it only checks one condition.
 
-console.log(" You entered a correct number" + input)
+while(input >= 10 ){
+    input=prompt("Invalid input. Please enter a number greater than 10:")
+}
+console.log(" You entered a correct number" +  input)
