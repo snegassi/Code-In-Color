@@ -5,6 +5,8 @@
  let numbers = [1, 2, 3, 4, 5];
  let fruits = ["apple", "banana", "cherry"];
  
+console.log(numbers)  // shows all items inside the brackets
+console.log(fruits)
 
 // Access elements by index (is used to find the location)
 // console.log(numbers[0]); // Output: 1
@@ -14,7 +16,7 @@
 // numbers[1] = 20; // Change the second element to 20
 // console.log(numbers); // Output: [1, 20, 3, 4, 5]
 
-// Next
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Examples for Array Methods in JavaScript
 
@@ -29,6 +31,8 @@
 // fruits.pop();
 // console.log(fruits); // Output: ["apple", "banana"]
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 // // Shift and Unshift
 // let numbers = [2, 3, 4];
 
@@ -41,14 +45,21 @@
 // numbers.unshift(1);
 // console.log(numbers); // Output: [1, 3, 4]
 
-// // Slice (your taking the selected parts only and leaving the other partd)
- let animals = ["cat", "dog", "elephant", "tiger"];
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// // Get elements from index 1 to 3 (excluding 3)
-   animals.slice(1, 3)
-let sliced = animals.slice(1, 3);
-   //console.log(animals) ????????????????????
-console.log(sliced); // Output: ["dog", "elephant"]
+
+// // Slice (your taking the selected parts only and leaving the other partd)
+//  let animals = ["cat", "dog", "elephant", "tiger"];
+
+// // // Get elements from index 1 to 3 (excluding 3)
+//    animals.slice(1, 3)
+// let sliced = animals.slice(1, 3);
+//    //console.log(animals) ????????????????????
+// console.log(sliced); // Output: ["dog", "elephant"]
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 
 // // Splice (your removing the selected parts only and replacing it with the other parts)
 // let colors = ["red", "blue", "green"];
