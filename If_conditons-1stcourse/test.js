@@ -9,5 +9,7 @@
 
 // if(openLibrary&& notChores){
 //     console.log(" i will study at the library")
+// } else{
+//   console.log("I won't go to the library")
 // }
 

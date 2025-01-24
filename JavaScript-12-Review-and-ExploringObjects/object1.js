@@ -14,8 +14,13 @@
 //     isStudent: true,
 //  }
 
-// console.log(person.age)   // to just getting value and view it
-// console.log(person["name"])
+// Using dot notation to accessing it, to just getting value and view it
+// console.log(person.age)
+
+// ### Using square bracket to accessing the value and viewing it, we use the double/single quote to the key to access it as the key is a string
+// console.log(person["name"])  
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 /**
@@ -39,6 +44,8 @@ const vehicle = {
 // vehicle.speed=40       // we can use it to Change the value of specific key too
 // console.log(vehicle)   // we use consol.log to view/ see the outcome
 
+/////////////////////////////////////////////////////////////////////////////////////////////
+
 /**
  3) Scenario: Update the age property of this object to 25
      const user = {
@@ -56,6 +63,7 @@ const vehicle = {
 // user.age=50
 // console.log(user)
 
+///////////////////////////////////////////////////////////////////////////////////////////////
 
 /**
  4)Scenario: Remove the year property from this object
@@ -75,6 +83,42 @@ const vehicle = {
 // delete movie.year   // but if we want to delete, 1st "delete" then 'name of function' then "." then "key"
 // console.log(movie)
 
+////////////////////////////////////////////////////////////////////////////////////////////
+
+/** How do we access the city or zip */
+// const obj={
+//     name: "Bob",
+// 	address:{
+// 		city: "New York",
+// 		zip: 1001,
+// 	}
+
+// }
+
+// // All of the following works in calling it 
+//  console.log(obj.address.city)
+//  console.log(obj["address"]["zip"])
+//  console.log(obj.address["zip"])
+//  console.log(obj['address'].zip)
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/** How do we access the email usingor from the variable key? */
+
+//    const key ="email"
+//    const obj={
+// 	  name: "Alice",
+// 	  email:"alice@hotmail.com"
+//    }
+
+//    console.log(key)  // this is the right way to get email
+//    console.log(obj.key)  // this is the wrong way and the output= undefined as key is not a key of obj.
+   
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  //##### Ways of Adding and Changing/Modifing of Properties to Objects theu are both the same.
 /**
  * 5)Scenario: Create an object called library with a property books, 
  * which is an array of three book titles (strings).
@@ -88,6 +132,32 @@ const vehicle = {
 // console.log(library)
 
 
+
+// const person= {
+// 	name:"Alice",
+
+// }
+
+// person.age = 25; // Adding Age using Dot Notation of Properties
+// person["city"] = "Los Angelies" // Adding  City using Bracket Notation of Properties
+
+// console.log(person)
+
+// // and 
+
+// const car={
+// 	make:"Toyota",
+// 	year:2020
+// } 
+
+//   car["make"]= "BMW"; // Changing/Modifying of make of properties
+//   car.year=2025;  // Changing/Modifying of year of properties
+
+//   console.log(car)
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+       // ####### the Use of "this" keyword #######
 /**
  *6) Scenario: Add a method called greet to the object below that prints “Hello, I am a dog!”. 
  Note: it’s printing the type, so if the animal is a cat, it should say, “Hello, I am a cat!”
@@ -104,9 +174,80 @@ const vehicle = {
 //    }
 // }
 
+// ##### "this". = lets us grap/reference the object that it's within/foundin on this case object =animal, 
+// ##### then "type" is the key thats found within the animal object.
+// ##### So that means, this.type= robot.type=dog.
+// ##### Hence "this.type"= dog and "this.legs"= 4
+
+//#### return is what comes out of the function()
 
 // console.log(animal.greet())  // so with ( ) it means we are calling it
 
 // animal.type="cat"
 
 // console.log(animal.greet()) 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// #### deleting properties in Object
+
+// const book ={
+// 	title:"1984",
+// 	author:"George Orwell",
+// 	year:2000
+// }
+
+// delete book.author // Using the delete keyword with dot notation 
+// console.log(book)
+// delete book["year"] // Using the delete keyword with Square notation
+// console.log(book)
+
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+//############### to get/obtain specifically all the keys or values seperately 
+
+// const car={
+// 	make:"Toyota",
+// 	model:"camry",
+// 	year:2025,
+// }
+
+// console.log(Object.keys(car))         // how to get all the keys only, in array format      
+// console.log(Object.values(car))      // how to get all the values only, in array format
+
+
+  
+// // #### "this Object prebuilt-class" Object. "this keys is also a built in key, like the Object. But it has() which the object in use get to be put in. In this case the object is car" keys(car)
+//                              //  0       1      2 
+//  const keysArray=Object.keys(car) // ["make","model","year"] this give me  all the keys in array
+// //  console.log(keysArray)
+
+
+// //  // #### 1st method of looping through Object 
+// //  // because the keys are in array we can also loop through using indexing, to get the values using the keys
+//  for (let i =0; i < keysArray.length;i++) {   // this gives me the Values in a loop/iteration
+// 	console.log(car[keysArray[i]])
+// }
+
+
+//#### 2nd method of looping through Object to get the all values OR keys seperately
+
+const person ={
+	name:"Alice",
+	age:25,
+	city:"New York",
+}
+
+// // // next line is how to get all the values only
+// // // Here, we are using a built-in key so even if we change the"key" to any name, it's still as if we are accessing the keys in object person.
+// // // But the key should be inside a bracket and not after a "." dot notation. Because if we do "." then is going to go and look for a "key" : something something inside the person object.
+// // for(let key in person){
+// // 	console.log(person[key])   //logs each key: name,age,city  // how to get all the values only
+// // }
+
+// // How about if we want to log the values from object person, hence x in person.
+for(let x in person){
+	console.log(person[x])    // how to get all the values only, in iteration format
+ 	console.log(x)       // how to get all the keys only,, in iteration format
+ }
