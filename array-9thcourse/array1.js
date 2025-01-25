@@ -2,6 +2,7 @@
 
 
 //Declare arrays
+
 //  let numbers = [1, 2, 3, 4, 5];
 //  let fruits = ["apple", "banana", "cherry"];
  
@@ -22,13 +23,13 @@
 // Examples for Array Methods in JavaScript
 
 // // Push and Pop (Push= adds at the end of array and Pop =takes the last of the array)
-//let fruits = ["apple", "banana"];
+// let fruits = ["apple", "banana"];
 
 // // Add a single or multiple elements to the end using "push() function"
-//fruits.push("cherry","mango");
+// fruits.push("cherry","mango");
 // console.log(fruits); // Output: ["apple", "banana", "cherry","mango"]
 
-// //but when  want to Remove we use pop(), but it only removes a single and the last element only
+// // //but when  want to Remove we use pop(), but it only removes a single and the last element only
 // fruits.pop();
 // console.log(fruits); // Output: ["apple", "banana"]
 
@@ -57,7 +58,7 @@
 // #### important => Get elements from index 1 to 3 (excluding 3), so 1 and 2 are removed but the main array is not affected by the changes though.
 //  animals.slice(1, 3)
 //  let sliced = animals.slice(1, 3);
-// console.log(animals) //????????????????????, well the original array remains unaffected
+// console.log(animals) // Well the original array remains unaffected
 // console.log(sliced); // Output: ["dog", "elephant"]
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -190,7 +191,7 @@
 // Copying Arrays
 // let array1=[1,2,3,4];
 // // let array2=array1;   // Copying one array to another is a problem, b/se of changes of datatypes, merging two arrays might cause a problem.thats why spread operator is needed.
-// let array2=[...array1] // this is the coorect one with spread operator, causes no problem
+// let array2=[...array1] // this is the correct one with spread operator, causes no problem
 // console.log(array2)
 
 
