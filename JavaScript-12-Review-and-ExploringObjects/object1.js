@@ -42,7 +42,7 @@ const vehicle = {
 // console.log(vehicle)     // we use consol.log to view/ see the outcome
 
 // vehicle.speed=40       // we can use it to Change the value of specific key too
-// console.log(vehicle)   // we use consol.log to view/ see the outcome
+// console.log(vehicle)   // we use consol.log to view/see the outcome
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -166,6 +166,7 @@ const vehicle = {
 	  legs: 4
 }
  */
+
 // const animal = {
 //    type: 'dog',
 //    legs: 4,
@@ -205,7 +206,7 @@ const vehicle = {
 
 ///////////////////////////////////////////////////////////////////////////////////////
 
-//############### to get/obtain specifically all the keys or values seperately 
+//############### How to get/obtain specifically all the keys or values seperately 
 
 // const car={
 // 	make:"Toyota",
@@ -219,7 +220,7 @@ const vehicle = {
 
   
 // // #### "this Object prebuilt-class" Object. "this keys is also a built in key, like the Object. But it has() which the object in use get to be put in. In this case the object is car" keys(car)
-//                              //  0       1      2 
+//                                    //  0       1      2 
 //  const keysArray=Object.keys(car) // ["make","model","year"] this give me  all the keys in array
 // //  console.log(keysArray)
 
@@ -233,21 +234,170 @@ const vehicle = {
 
 //#### 2nd method of looping through Object to get the all values OR keys seperately
 
-const person ={
-	name:"Alice",
-	age:25,
-	city:"New York",
-}
+// const person ={
+// 	name:"Alice",
+// 	age:25,
+// 	city:"New York",
+// }
 
-// // // next line is how to get all the values only
-// // // Here, we are using a built-in key so even if we change the"key" to any name, it's still as if we are accessing the keys in object person.
+//  // // next line is how to get all the values only
+//  // // Here, we are using a built-in key so even if we change the"key" to any name like x or else, it's still as if we are accessing the keys in object person.
 // // // But the key should be inside a bracket and not after a "." dot notation. Because if we do "." then is going to go and look for a "key" : something something inside the person object.
-// // for(let key in person){
-// // 	console.log(person[key])   //logs each key: name,age,city  // how to get all the values only
-// // }
+// for(let key in person){
+// 	//console.log(key)          //logs each key: name,age,city 
+// 	console.log(person[key])   // how to get all the values only
+// }
 
-// // How about if we want to log the values from object person, hence x in person.
-for(let x in person){
-	console.log(person[x])    // how to get all the values only, in iteration format
- 	console.log(x)       // how to get all the keys only,, in iteration format
- }
+
+///###### diference between the use of "for...in" and "for...of loops" in JavaScript
+//	"for...in"
+// Purpose: Iterates over keys (property names).
+// Best used: When working with objects to iterate over keys, as well as arrays (but not recommended for arrays).
+//Returns: The property keys of the object.
+
+// const obj = { 
+//   name: "Alice",
+//    age: 25, 
+//    city: "Toronto"
+//    };
+
+// for (let key in obj) {
+//   //console.log(key); // Outputs: "name", "age", "city"
+//   console.log(obj[key]); // Outputs the values: "Alice", 25, "Toronto"
+// }
+
+//////// But for "for...of loops" is best used in Arrays,Strings or Maps BUT NOT IN Objects, however go lower if want to use it to get values
+
+// Purpose: Used to iterate over the values of an iterable object.
+//Best used:When working with iterables like arrays, strings, or maps to get values directly..
+// Returns: The values of the iterable.
+
+// const arr = [10, 20, 30];
+
+// for (let value of arr) {
+//   console.log(value); // Outputs: 10, 20, 30
+// }
+ //### if we decise to use "for...of loops" in Objects to get Values we use "Object.values()"
+//     for (const value of Object.values(obj)) {
+//             console.log(value); // Access each value of the object
+// }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//### this following "Object.entries()" is used to produces an array of BOTH key-values of the object person,
+
+// let propertiesBoth=Object.entries(person)
+// console.log(propertiesBoth)
+
+//###  How to use Object methods to creat new object, merge objects , updating and overriding objects
+
+// const person = {
+// 	isHuman: false,
+// 	printIntroduction: function () {
+// 	  console.log(`My name is ${this.name}. Am I human? ${this.isHuman}`);
+// 	},
+//   };
+  
+//   //### object me uses object person's properties (prototype/blueprint), 
+//   // as if it was its own and simplely adds its properties by declaring it OR go below
+//   const me = Object.create(person);
+  
+//   me.name = 'Matthew'; // "name" is a property set on "me", but not on "person"
+//   me.isHuman = true; // Inherited properties can be overwritten
+  
+//  //me.printIntroduction(); // Expected output: "My name is Matthew. Am I human? true"
+  
+
+//#### OR objects dog can add the properties (prototype/blueprint) of object animal into its own properties.
+
+// const ani= {
+// 	species: "animal",
+//   };
+  
+//   const dog = Object.create(ani, {
+// 	breed: {
+// 	  value: "Golden Retriever",
+// 	  writable: false,
+// 	  enumerable: true,
+// 	},
+// 	bark: {
+// 	  value: function () {
+// 		console.log("Woof!");
+// 	  },
+// 	  enumerable: true,
+// 	},
+//   });
+  
+//   console.log(dog.species); // Output: animal (inherited from `animal`)
+//   console.log(dog.breed);   // Output: Golden Retriever
+//   dog.bark();               // Output: Woof!
+
+
+  //##### OR N.B., SEE THE DIFFERENCE BETWEEN Object.create() vs Object.assign()
+
+   /**
+   *  Here:
+  -The child object has its own property name, but it inherits the greet method from parent.
+  -If you modify parent.greet, it will affect child.greet too because they are linked.
+ - In simpler terms, Object.create() sets up a link between the new object and the old one. It's great for creating objects that share functionality,
+   like when working with shared tasks or features in a team (like supporting a patient plan).
+  
+  If you need a copy of properties, you’d use something like Object.assign() instead.
+   * 
+   */
+
+  const parent = {
+	greet: function () {
+	  console.log("Hello!");
+	},
+  };
+  
+  const child = Object.create(parent);
+  child.name = "John";
+  
+  console.log(child.name); // Output: John (own property)
+  // child.greet();           // Output: Hello! (inherited from parent)  ????????
+  console.log(child.greet())                                              ???????
+ 
+ 
+  //####  To copy properties use one of the following: spread operator (...)  vs Object.assign()
+
+  /*
+  -Use the spread operator (...) for its simplicity and readability.
+  -The spread operator can work with arrays, but Object.assign() is designed for objects only.
+  -Use Object.assign() when working with prototypes or when you need older browser compatibility (spread operator may not work in older browsers).
+  In modern JavaScript, the spread operator is often preferred because it is cleaner and easier to use.
+ */
+
+ // #### Spread Operator (...): More concise and easier to read.
+
+// const obj1 = { a: 1 };
+// const obj2 = { b: 2 };
+
+// const merged = { ...obj1, ...obj2 };
+// console.log(merged); // Output: { a: 1, b: 2 }
+
+//##### Object.assign(): Slightly more verbose and requires passing the target as the first argument.
+
+// const obj1 = { a: 1 };
+// const obj2 = { b: 2 };
+
+// const merged = Object.assign({}, obj1, obj2);
+// console.log(merged); // Output: { a: 1, b: 2 }
+
+///////////////////////////// BUT /////////////////////////// 
+
+// ### In Handling Prototypes
+//#### Spread Operator: Ignores non-enumerable properties (like methods from the prototype).
+
+// const parent = { greet() { console.log("Hello!"); } };
+// const child = { ...parent };
+// console.log(child.greet); // Output: undefined
+
+//#### Object.assign(): Copies enumerable and own properties, including from the prototype.
+
+// const parent = { greet() { console.log("Hello!"); } };
+// const child = Object.assign({}, parent);
+// console.log(child.greet); // Output: function greet() { console.log("Hello!"); }
+
+
