@@ -1,7 +1,7 @@
 
 
 
-//Declare arrays
+// Declare arrays
 
 //  let numbers = [1, 2, 3, 4, 5];
 //  let fruits = ["apple", "banana", "cherry"];
@@ -17,7 +17,8 @@
 // numbers[1] = 20; // Change the second element to 20
 // console.log(numbers); // Output: [1, 20, 3, 4, 5]
 //  fruits[0]= "mango"
-// console.log(fruits)
+// console.log(fruits) // Output= ["mango", "banana", "cherry"]
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Examples for Array Methods in JavaScript
@@ -31,7 +32,7 @@
 
 // // //but when  want to Remove we use pop(), but it only removes a single and the last element only
 // fruits.pop();
-// console.log(fruits); // Output: ["apple", "banana"]
+// console.log(fruits); // Output: [ 'apple', 'banana', 'cherry' ]
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -39,24 +40,25 @@
 //  let numbers = [2, 3, 4];
 
 // // Remove the 1st single element only
-// let first = numbers.shift();  // we declared a variable called first, because we want to save the removed item 
-// but if we didnt want to save it we could just write it as, first = numbers.shift();  
+// // we declared a variable called first, because we want to save the removed item 
+// // but if we didnt want to save it we could just write it as, first = numbers.shift();  
 
+// let first = numbers.shift();  
 // console.log(first);  // Output: 2
 // console.log(numbers); // Output: [3, 4]
 
 // // but when Adding, we can add a single or multiple elements to the beginning
 // numbers.unshift(1,8);
-// console.log(numbers); // Output: [1, 3, 4]
+// console.log(numbers); // Output: [1,8, 3, 4]
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 // // Slice Only Copys (your taking the selected/copying parts only and taking it to your new array but the original array remains unaffected)
- // let animals = ["cat", "dog", "elephant", "tiger"];
+//  let animals = ["cat", "dog", "elephant", "tiger"];
 
-// #### important => Get elements from index 1 to 3 (excluding 3), so 1 and 2 are removed but the main array is not affected by the changes though.
-//  animals.slice(1, 3)
+// // #### important => Get elements from index 1 to 3 (excluding 3), so 1 and 2 are removed but the main array is not affected by the changes though.
+// //  animals.slice(1, 3)
 //  let sliced = animals.slice(1, 3);
 // console.log(animals) // Well the original array remains unaffected
 // console.log(sliced); // Output: ["dog", "elephant"]
@@ -64,9 +66,8 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-
 // // Splice Removes OR Replaces OR Both (your removing the selected parts only and replacing it with the other parts)
-//  let colors = ["red", "blue", "green"];
+//let colors = ["red", "blue", "green"];
 
 // // // All splice() does is Remove and replace elements! ### important => Get elements from index 1 to 2, so 1 and 2 are removed and replaced at the same time
 // //  and the main array is affected/changed by the changes though.
@@ -91,13 +92,11 @@
 
 
 // Map
-// let nums = [1, 2, 3, 4];
+ // let nums = [1, 2, 3, 4];
 
 // // Multiply each element by 2
 // let doubled = nums.map(num => num * 2);
 // console.log(doubled); // Output: [2, 4, 6, 8]
-
-
 
 
 
@@ -107,7 +106,6 @@
 // // Keep elements greater than 10
 // let filtered = values.filter(value => value > 10);
 // console.log(filtered); // Output: [15, 20]
-
 
 
 
@@ -139,7 +137,6 @@
 
 
 // //Aggregation
-
 
 // // `reduce()`
 //Explanation**: Adds all elements in the array starting from 0.

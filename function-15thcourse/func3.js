@@ -36,6 +36,8 @@ function squareNum(f){
 }
 //console.log(squareNum(4));
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 // 5. Function to Calculate Area of a Rectangle
 // Create a function that takes the length and width of a rectangle and returns its area.
 

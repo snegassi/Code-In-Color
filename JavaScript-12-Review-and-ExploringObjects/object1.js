@@ -400,4 +400,3 @@ const vehicle = {
 // const child = Object.assign({}, parent);
 // console.log(child.greet); // Output: function greet() { console.log("Hello!"); }
 
-
