@@ -104,7 +104,7 @@ const vehicle = {
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-/** How do we access the email usingor from the variable key? */
+/** How do we access the "email" from the variable key? */
 
 //    const key ="email"
 //    const obj={
@@ -118,20 +118,20 @@ const vehicle = {
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-  //##### Ways of Adding and Changing/Modifing of Properties to Objects theu are both the same.
+  //##### Ways of Adding and Changing/Modifing of Properties to Objects they are both the same.
 /**
  * 5)Scenario: Create an object called library with a property books, 
  * which is an array of three book titles (strings).
  */
 
-// const library={
+const library={
      
-// }
+}
 
-// library.books=["good","bad","coding"] 
-// console.log(library)
+library.books=["good","bad","coding"] 
+console.log(library)
 
-
+//////////////////////
 
 // const person= {
 // 	name:"Alice",
@@ -175,7 +175,7 @@ const vehicle = {
 //    }
 // }
 
-// ##### "this". = lets us grap/reference the object that it's within/foundin on this case object =animal, 
+// ##### "this". = lets us grab/reference the object that it's within/foundin on this case object =animal, technically this === animal/ any object
 // ##### then "type" is the key thats found within the animal object.
 // ##### So that means, this.type= robot.type=dog.
 // ##### Hence "this.type"= dog and "this.legs"= 4
@@ -346,18 +346,18 @@ const vehicle = {
    * 
    */
 
-  const parent = {
-	greet: function () {
-	  console.log("Hello!");
-	},
-  };
+  // const parent = {
+	// greet: function () {
+	//   console.log("Hello!");
+	// },
+  // };
   
-  const child = Object.create(parent);
-  child.name = "John";
+  // const child = Object.create(parent);
+  // child.name = "John";
   
-  console.log(child.name); // Output: John (own property)
-  // child.greet();           // Output: Hello! (inherited from parent)  ????????
-  console.log(child.greet())                                              ???????
+  // console.log(child.name); // Output: John (own property)
+  // // child.greet();           // Output: Hello! (inherited from parent)  ????????
+  // console.log(child.greet())                                              ???????
  
  
   //####  To copy properties use one of the following: spread operator (...)  vs Object.assign()
