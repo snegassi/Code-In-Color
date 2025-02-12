@@ -7,6 +7,7 @@
 //so arr is the arry we give it which is numbers(located at the bottom)
 // the callback(arr)=either double(num) or square(num) and the (num) used here is just an indication that any number thats put in it
 // the result array is the end result of this processArry and we end its function by writing "return result"
+
 function processArray(arr,callback){
     let result = [];
     for(let i = 0; i < arr.length; i++){
@@ -25,4 +26,4 @@ function processArray(arr,callback){
     let numbers =[1,2,3,4,5];
     console.log(processArray(numbers, double));
     console.log(processArray(numbers, square));
-    
+ 

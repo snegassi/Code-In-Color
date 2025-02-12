@@ -1,0 +1,19 @@
+
+
+header{
+    /* we use text-align: to move our content to center or around    */
+    text-align:center ; 
+    background-color: black;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+
+
+
+}   
+
+nav ul{
+/* we use list-style to remove the bullet point and if used with href the blue underlining */
+   list-style: none;
+
+
+}

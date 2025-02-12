@@ -60,6 +60,7 @@ function isPalindrome(str) {
     return false
     } else {
     // Recursive step
+    // str.substrin(1st position is exactly at the index gets picked, but 2nd number is str.length -1 so as to pick the last one)
     return isPalindrome(str.substring(1, str.length - 1))
     }
 }

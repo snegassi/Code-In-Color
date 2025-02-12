@@ -249,7 +249,8 @@ console.log(library)
 // }
 
 
-///###### diference between the use of "for...in" and "for...of loops" in JavaScript
+///###### diference between the use of "for...in" is used to get keys/ using object[key] to get the value of an object BUTTTT
+//"for...of loops" is used in array to get the items of an array
 //	"for...in"
 // Purpose: Iterates over keys (property names).
 // Best used: When working with objects to iterate over keys, as well as arrays (but not recommended for arrays).

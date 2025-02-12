@@ -1,0 +1,70 @@
+body {
+    margin:0;
+    padding:0;
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/*  text-align positioned the content to center, moved it horizontally from left to the middle or right side */
+header {
+    background-color: #0d240f;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+/* list-style removed the bullet point of the ul while it was on vertical 1st before using diplay:inline */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+/* display did was change the order of the list from vertical to horizontal and kinda removed the bulleting of the li*/
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+/* text-decoration  blue underline of the ul */
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+section, article{
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0) ;
+    border-radius:10px;
+    width:100%;
+    box-sizing: border-box;
+}
+
+aside {
+    background-color: #eee;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right:20px ;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
