@@ -1,0 +1,35 @@
+*{
+
+
+padding: 0;
+margin: 0;
+font-size: 80px;
+
+}
+
+.one {
+background-color:lightblue;
+padding: 30px;
+border: 15px solid
+width: 60px;
+height: 40px;
+box-sizing: border-box;
+}
+
+two {
+background-color:lightpink;
+padding: 50px;
+border: 10px solid
+width: 250px;
+height: 10px;
+box-sizing: border-box;
+}
+
+
+
+
+/* lightpink;
+
+black;
+
+} */
