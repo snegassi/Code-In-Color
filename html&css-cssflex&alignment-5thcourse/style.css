@@ -1,0 +1,132 @@
+
+
+/* 1st worked on this below */
+body{
+   margin: 20px; 
+   text-align: center;
+   font-family: Arial, sans-serif;
+}
+
+/* 2nd worked on this below*/
+h1{
+    margin-bottom: 10px;
+}
+
+/* 3rd worked on this below*/
+h2{
+    margin-bottom: 10px;
+}
+
+/* 4th worked on this below */
+.container{
+    /* Using only display: flex;(1st)-it takes the full width of the screen, (2nd) thats why its only used for divs & p,h1,img..etc media tags and (3rd)-Although it puts stuff on a Row, we can not relie only with that. We need to also call some of the attributs on the next line like "flex-direction:..." or "flex-wrap:.." to make it stick,
+    as using only "Display: flex" is just basically callin it first so we can use the next attributes */
+    display: flex;   
+    /* so "flex-wrap:" is helpfull with Responsiveness(with changes of different Screen Sizes) and has 3 attributes(:nowrap-keeps things in a row, :wrap-keeps things in column from1,2,3..,:wrap-reverse-does opposite to ":wrap"-keep things goind down from 3,2,1.... 
+    and the other one, "flex-direction:" is helpfull in keeping things in a Row, :row- keeps things in a row 1,2,3...,:row-revers- is opposite to":row"-keeps things in a row but revers 3,2,1...,:column-keeps things in a column 1,2,3...,:column-reverse(is opposite to":column"-keeps things in column but reverse 3,2,1...,
+    as well as "justify-content: " it align items in x-axis while "align-item:" it alings items in y-axis. But "align-content:" aligns contents with in their container/div*/
+    flex-wrap: wrap;
+    border: 2px solid black;
+    /* first 10px for top &bottom, and auto is for left & right */
+    margin: 10px auto;
+    padding:10px;
+    width: 80%;
+    height: auto;
+    background-color: rgb(223, 242, 237);
+
+}
+/* 5th worked on this below */
+.item{
+    width: 100px;
+    height: 100px;
+    background-color: steelblue;
+    color: white;
+    font-size: 20px;
+    /* this below "display:flex" is only used so as the items content/div could apply the next 2 lines of "justify-content: center;" and  "align-items: center;" */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius:10px ;
+   
+}
+
+/* 6th worked on this below */
+/* from this on/ going down, I don't need to use display:flex, since i already created ii the container class above.so now i would just procede with the next line of attributes in the next classes  */
+
+.flex-row{
+    /* this flex direction is the 1st attribut of display:flex, and is solidifies/supports the display:flex */
+   flex-direction: row;
+   /* here, I could have used "justify-content: space-between;" that would use the space automatically, but to control the space manually we use "gap:5/10px" */
+   gap:70px;
+}
+
+/* 7th worked on this below */
+/* Now let's do the same with flex-column */
+.flex-column{
+   flex-direction: column;
+   height: auto; 
+}
+
+/* " justify-content:" works in X-axis,hence why "space-between" side-ways movement: flex-start,center and flex-end*/
+.justifyContent{
+    justify-content:space-between;
+}
+
+.flexWrap{
+    /* here below "flex-wrap:" HELPS with Responsivness and wraps everything within the div it's assigned & has properties like ":nowrap"- keeps the items in Row,":wrap;"-keeps the items in column 1,2,3..,":wrap-reverse;"-is oppostie to ":wrap"-keeps items column-reverse 3,2,1..   */
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+/* "align-items:" works in Y-axis,hence to see the change height is required and it's up,center and down movement like "flex-start,center and flex-end" */
+.alignItems{
+    align-items: center;
+    height: 300px;
+}
+
+/* "display: inline-flex;" the inline-flex, 1st it only takes the space of the items of within.Hence, why it's only used with divs not p,h1,img..etc media tags */
+.inline-flex-container{
+    display: inline-flex;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+/* flex-grow: is used for divs, not p,h1,img..etc media tags as it only grows the space around it instead of the item itself */
+.flex-grow-shrink .grow1{
+     flex-grow: 3;
+}
+
+.flex-grow-shrink .grow2{
+    flex-grow: 2;
+}
+
+.flex-grow-shrink .grow3{
+    flex-grow: 1; 
+}
+
+
+/* i will not use class for the table as it has tags so i will use them */
+
+table{
+    width: 80%;
+    /* 1st top& bottom, 2nd left &right */
+    margin: 20px auto;
+    background-color:#f4f4f4 ;
+    /* border collase:collapse, removes the items borders and sticks them side to side */
+    border-collapse:collapse ;
+
+}
+
+th,td{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+th{
+    background-color: steelblue;
+    color: white;
+}

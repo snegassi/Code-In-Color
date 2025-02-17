@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- we use the link, to connect our css to this html -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>CSS Flexbox and Alignment Properties </h1>
+
+    <section>
+        <h2>Felx Direction: Row</h2>
+        <!-- here below, we can name multiple class Names within 0ne class="", just need to use some space between them  -->
+        <div class="container  flex-row">
+             <div class="item">1</div>
+             <div class="item">2 </div>
+             <div class="item">3</div>
+        </div>
+    </section>
+    <section>
+        <h2>Felx Direction: Column</h2>
+        <!-- here below, we can name multiple class Names within 0ne class="", just need to use some space between them  -->
+        <div class="container  flex-column">
+             <div class="item">1</div>
+             <div class="item">2 </div>
+             <div class="item">3</div>
+        </div>
+    </section>
+    <section>
+        <h2>Justify Content</h2>
+        <!-- here below, we can name multiple class Names within 0ne class="", just need to use some space between them  -->
+        <div class="container  justifyContent">
+             <div class="item">1</div>
+             <div class="item">2 </div>
+             <div class="item">3</div>
+        </div>
+    </section>
+    <section>
+        <h2>Flex Wrap</h2>
+        <!-- here below, we can name multiple class Names within 0ne class="", just need to use some space between them  -->
+        <div class="container  flexWrap">
+             <div class="item">1</div>
+             <div class="item">2 </div>
+             <div class="item">3</div>
+             <div class="item">4</div>
+             <div class="item">5 </div>
+             <div class="item">6</div>
+        </div>
+    </section>
+    <section>
+        <h2>Align Items</h2>
+        <!-- here below, we can name multiple class Names within 0ne class="", just need to use some space between them  -->
+        <div class="container  alignItems">
+             <div class="item">1</div>
+             <div class="item">2 </div>
+             <div class="item">3</div>
+        </div>
+    </section>
+    <section>
+    <h2>Inline Flex</h2>
+    <!-- here below, we can name multiple class Names within 0ne class="", just need to use some space between them  -->
+    <div class="inline-flex-container">
+         <div class="item">1</div>
+         <div class="item">2 </div>
+         <div class="item">3</div>
+    </div>
+    <div class="inline-flex-container">
+             <div class="item">1</div>
+             <div class="item">2 </div>
+             <div class="item">3</div>
+    </div>
+    </section>
+    <section>
+        <h2>Flex Grow & Shrink </h2>
+        <!-- here below, we can name multiple class Names within 0ne class="", just need to use some space between them  -->
+        <div class="container  flex-grow-shrink">
+             <div class="item grow1">1</div>
+             <div class="item grow2">2 </div>
+             <div class="item grow3">3</div>
+        </div>
+    </section>
+    <section>
+        <h2>Table Example </h2>
+        <!-- to create a table we use <table> tag, just like if we want to create a form we would use <form>tag -->
+          <table>
+            <!-- to create the heading-row of the table we create <thead>tag -->
+                <thead>
+                    <!-- to create the table-row within the table we use <tr>tag-->
+                       <tr>
+                        <!-- SO <th>tag === <td>tag which is table data-->
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                       </tr> 
+                </thead>
+                <!-- the above was all table heading,NEXT let's create the table body-->
+                <tbody>
+                    <tr>
+                        <!-- Now is where we use <td>tag as it;s for the data in body compared to the <th> data in heading -->
+                         <td>Apple</td>
+                         <td>2</td>
+                         <td>$3.00</td>
+                    </tr>
+                    <tr>
+                        <td>Banana</td>
+                        <td>3</td>
+                        <td>$3.50</td>
+                    </tr>
+                    <tr>
+                        <td>Cherry</td>
+                        <td>5</td>
+                        <td>$5.00</td>
+                    </tr>
+                </tbody>
+          </table>
+    </section>
+</body>
+</html>
