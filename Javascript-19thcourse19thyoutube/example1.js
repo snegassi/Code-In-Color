@@ -41,7 +41,7 @@ person1.name = 'Bob'; // Assigned / declared the name = "set" the name, setter
 console. log(person1.name);
 
 console. log(person1.age);
-person1.age = 30;
+person1.age = 30;  
 console.log(person1.age);
 
 console.log(person2.age);
