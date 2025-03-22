@@ -8,7 +8,7 @@ class Car {
          this._mileage=mileage;
          // private property but that is a "normal array" ,
          //  BUT later because of the relation of date and service making them object ({date,service}), 
-         // the array becomess an array of object 
+         // the array becomess an "array of object" 
          this._serviceRecord=[];
     }
 
@@ -56,7 +56,7 @@ class Car {
         const car1 = new Car("Toyota","Camry",2010,120000);
         const car2 = new Car("Honda","Accord",2015,90000);
         
-        console.log('${car1.make} ${car1.model} initial mileage: ${car1.mileage}');
-        console.log('${car2.make} ${car2.model} initial mileage: ${car2.mileage}'); 
+        console.log(`${car1.make} ${car1.model} initial mileage: ${car1.mileage}`);
+        console.log(`${car2.make} ${car2.model} initial mileage: ${car2.mileage}`); 
 
 

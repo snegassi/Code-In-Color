@@ -1,4 +1,7 @@
 
+
+ /*For making this kind of comment use Shift + Alt + A  */
+
 class Person {
     constructor(name, age){
         // then make properties of this constructor, but the properties are private because of "._" indication
@@ -25,7 +28,7 @@ class Person {
     //Setter for age
     set age(newAge){
         if(newAge < 0){
-           console. log('Age cannot be negative. ');
+           console. log('Age cannot be negative.');
         }
        else{
            this._age = newAge;
