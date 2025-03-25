@@ -10,12 +10,20 @@ class Person {
 name
 age
 
-constructor() {
+constructor(name, age) {
+    this.name = name;
+    this.age = age;
 
-}
+ }
 
 introduce() {
-    return""
-}
+    return `My name is ${this.name}, I am ${this.age} years old.`
+ }
 
 }
+
+const joe = new Person ("Joe", 35)
+console.log(joe.name)
+console.log(joe.age)
+console.log(joe.introduce)
+console.log(joe.introduce())
